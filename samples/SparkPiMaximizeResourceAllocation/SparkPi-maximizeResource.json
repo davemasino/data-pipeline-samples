@@ -9,7 +9,7 @@
     },
     {
       "name": "DefaultEmrActivity1",
-      "step": "command-runner.jar,spark-submit,--class,org.apache.spark.examples.SparkPi,/usr/lib/spark/lib/spark-examples.jar,100",
+      "step": "command-runner.jar,spark-submit,--class,org.apache.spark.examples.SparkPi,/usr/lib/spark/examples/jars/spark-examples.jar,100",
       "runsOn": {
         "ref": "EmrClusterId_mD6dg"
       },
@@ -23,7 +23,7 @@
       "name": "DefaultEmrCluster1",
       "coreInstanceCount": "1",
       "coreInstanceType": "m3.xlarge",
-      "releaseLabel": "emr-4.6.0",
+      "releaseLabel": "emr-5.15.0",
       "masterInstanceType": "m3.xlarge",
       "id": "EmrClusterId_mD6dg",
       "type": "EmrCluster",
